@@ -1,0 +1,95 @@
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ESTILOS GENERALES */
+
+/* estilo general del body */
+
+body {
+  background-color: #58626C;
+  color: #F5F1EE;
+  font-family: Verdana;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* estilo general del header */
+header {
+  grid-row: 1;
+  color: #000000;
+}
+
+/* estilo general del main */
+main {
+  grid-row: 2;
+}
+
+/* Estilo general del footer */
+footer {
+  grid-row: 3;
+  background-color: #ECC1A1;
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-top: 1px solid #000000;
+  text-align: center;
+  color: #000000;
+
+}
+
+
+/* contenido del header general */
+
+.banner {
+  background-color: #ECC1A1;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom: 1px solid #000000;
+
+}
+
+/* editando el logo general */
+
+.logo {
+
+  margin-left: 10px;
+
+}
+
+.logo-contenido {
+
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.logo-letra {
+  font-size: 2rem;
+}
+
+/* hasta aca edicion del logo */
+
+
+/* menu de navegacion general */
+
+.nav-link:hover {
+
+  color: black;
+}
+
+/* HASTA AQUI ESTILOS GENERALES */
+
