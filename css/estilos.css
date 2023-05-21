@@ -94,6 +94,8 @@ footer {
 /* HASTA AQUI ESTILOS GENERALES */
 
 
+
+
 /* N°1 editando page INICIO / index.html*/
 
 /* estilos para los 3 tipos de pantalla */
@@ -137,9 +139,7 @@ footer {
 
     /* editando contenido aside */
     .img-biografia img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+       object-fit: cover;
     }
 
     /* section para pantalla de celular INICIO */
@@ -237,6 +237,8 @@ footer {
 }
 
 /* N°1 hasta aqui page INICIO / index.html*/
+
+
 
 
 /* N°2 editando page RECITALES / recitales.html */
