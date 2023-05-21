@@ -96,14 +96,23 @@ footer {
 
 /* N°1 editando page INICIO / index.html*/
 
+/* estilos para los 3 tipos de pantalla */
+
+  /* titulo h1  biografia */
+  .titulo-index-biografia {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+/* titulo h2 exitos destacados */
+.titulo-exitos {
+    text-align: center;
+    margin: 1rem;
+  }
+
 /* contenido para pantalla de celular */
 @media screen and (max-width:600px) {
 
-    /* titulo biografia */
-    .titulo-index-biografia {
-      text-align: center;
-      margin-top: 5rem;
-    }
   
     /* contenedor article y aside */
     .container-biografia {
@@ -133,11 +142,7 @@ footer {
     }
   
     /* section para pantalla de celular INICIO */
-    /* editando titulo */
-    .titulo-exitos {
-      text-align: center;
-      margin: 1rem;
-    }
+    
   
     /* contenedor section */
     .canciones {
@@ -164,12 +169,7 @@ footer {
   
   @media screen and (min-width:600px) and (max-width:1024px) {
   
-    /* editando el titulo h1 para biografia */
-    .titulo-index-biografia {
-      text-align: center;
-      margin-top: 5rem;
-      margin-bottom: 1rem;
-    }
+  
   
     /* contenedor div  */
     .container-biografia {
@@ -190,13 +190,6 @@ footer {
   
     }
   
-  
-    /* editando titulo h2 para exitos  */
-    .titulo-exitos {
-      text-align: center;
-      margin: 1rem;
-    }
-  
     /* contenedor section */
     .canciones {
       margin: 1rem;
@@ -210,13 +203,6 @@ footer {
   
   /* contenido para pantalla de escritorio/desktop */
   @media screen and (min-width:1024px) {
-  
-    /* editando el titulo h1 para biografia */
-    .titulo-index-biografia {
-      text-align: center;
-      margin-top: 5rem;
-      margin-bottom: 1rem;
-    }
   
     /* contenedor div  */
     .container-biografia {
@@ -239,12 +225,6 @@ footer {
       grid-column: 2;
     }
   
-    /* editando titulo h2 para exitos  */
-    .titulo-exitos {
-      text-align: center;
-      margin: 1rem;
-    }
-  
     /* contenedor section */
     .canciones {
       margin: 1rem;
@@ -256,3 +236,130 @@ footer {
   }
   
   /* N°1 hasta aqui page INICIO / index.html*/
+
+
+  /* N°2 editando page RECITALES / recitales.html */
+
+/* edicion de la lista general para los 3 tipos de pantalla */
+
+   /* editando lista */
+   .cuadro-enlistado ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .cuadro-enlistado li {
+    height: 5rem;
+    border-bottom: 2px solid #01030b;
+  }
+
+  .cuadro-enlistado a {
+    display: block;
+    color: #58626C;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .cuadro-enlistado a:hover {
+    color: rgb(0, 0, 0);
+
+  }
+  /* hasta aca edicion de lista */
+
+/* editando titulo general para page recitales para los 3 tipos de pantalla */
+
+  /* editando el titulo */
+  .titulo-recitales {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* editando estilos de la lista para los 3 tipos de pantalla  */
+  /* editando aside / lista */
+  .cuadro-enlistado{
+    background-color: #dac8be;
+    border: 1px solid #000000;
+    height: 40rem;
+  }
+
+
+
+/* contenido para pantalla de celular */
+@media screen and (max-width:600px) {
+  
+    /* contenedor del div */
+    .contenedor-recitales {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    /* contenedor del aside / lista */
+    .cuadro-enlistado {
+      grid-row: 2;   
+      margin: 1rem;     
+    } 
+  
+    /* contenido del article */
+    .imagen-escritorio,
+    .imagen-tablet {
+      display: none;
+    }
+  }
+  
+
+  /* contenido para pantalla de tablet */
+  @media screen and (min-width:600px) and (max-width:1024px) { 
+  
+    /* contenedor del div */
+    .contenedor-recitales {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    /* contenedor del aside */
+    .cuadro-enlistado {
+      grid-row: 2;   
+      margin: 1rem 4rem 1rem 4rem;
+    }
+  
+    /* contenido del article */  
+    .imagen-escritorio {
+      display: none;
+    }
+  }
+  
+  
+  /* contenido para pantalla de escritorio/desktop */
+  @media screen and (min-width:1024px) {
+  
+  
+    /* contenedor div  */
+    .contenedor-recitales {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "imagen cuadro";
+      grid-gap: 1rem;
+    }
+  
+    /* contenedor aside / lista */
+  
+    .cuadro-enlistado {
+      grid-area: cuadro;
+      margin: 1rem;
+      width: auto;
+    }
+  
+    /* contenedor article */
+    .imagen-escritorio img {
+      grid-area: imagen;
+      align-self: flex-end;
+      margin: 1rem;
+      width: 100%;
+      height: 40rem;
+    } 
+  
+  }
+  
+  /* N°2 Hasta aqui page RECITALES / recitales.html */
