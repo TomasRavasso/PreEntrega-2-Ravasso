@@ -1,46 +1,46 @@
-
 /* reset */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 /* ESTILOS GENERALES */
 
 /* estilo general del body */
 
 body {
-  background-color: #58626C;
-  color: #F5F1EE;
-  font-family: Verdana;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+    background-color: #58626C;
+    color: #F5F1EE;
+    font-family: Verdana;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 /* estilo general del header */
 header {
-  grid-row: 1;
-  color: #000000;
+    grid-row: 1;
+    color: #000000;
 }
 
 /* estilo general del main */
 main {
-  grid-row: 2;
+    grid-row: 2;
 }
 
 /* Estilo general del footer */
 footer {
-  grid-row: 3;
-  background-color: #ECC1A1;
-  bottom: 0;
-  width: 100%;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-  border-top: 1px solid #000000;
-  text-align: center;
-  color: #000000;
+    grid-row: 3;
+    background-color: #ECC1A1;
+    bottom: 0;
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-top: 1px solid #000000;
+    text-align: center;
+    color: #000000;
 
 }
 
@@ -48,17 +48,17 @@ footer {
 /* contenido del header general */
 
 .banner {
-  background-color: #ECC1A1;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-  border-bottom: 1px solid #000000;
+    background-color: #ECC1A1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom: 1px solid #000000;
 
 }
 
@@ -66,19 +66,19 @@ footer {
 
 .logo {
 
-  margin-left: 10px;
+    margin-left: 10px;
 
 }
 
 .logo-contenido {
 
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 
 }
 
 .logo-letra {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 /* hasta aca edicion del logo */
@@ -88,7 +88,7 @@ footer {
 
 .nav-link:hover {
 
-  color: black;
+    color: black;
 }
 
 /* HASTA AQUI ESTILOS GENERALES */
@@ -98,268 +98,263 @@ footer {
 
 /* estilos para los 3 tipos de pantalla */
 
-  /* titulo h1  biografia */
-  .titulo-index-biografia {
+/* titulo h1  biografia */
+.titulo-index-biografia {
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 1rem;
-  }
+}
+
 /* titulo h2 exitos destacados */
 .titulo-exitos {
     text-align: center;
     margin: 1rem;
-  }
+}
 
 /* contenido para pantalla de celular */
 @media screen and (max-width:600px) {
 
-  
+
     /* contenedor article y aside */
     .container-biografia {
-      margin-top: 1rem;
-      display: grid;
-      grid-gap: 1rem;
+        margin-top: 1rem;
+        display: grid;
+        grid-gap: 1rem;
     }
-  
+
     /* editando contenedor article */
     .texto-biografia {
-      margin: 2rem;
-      grid-row: 2;
-      text-align: left;
-  
+        margin: 2rem;
+        grid-row: 2;
+        text-align: left;
+
     }
-  
+
     /* editando contenedor aside */
     .img-biografia {
-      grid-row: 1;
+        grid-row: 1;
     }
-  
+
     /* editando contenido aside */
     .img-biografia img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-  
+
     /* section para pantalla de celular INICIO */
-    
-  
+
+
     /* contenedor section */
     .canciones {
-      display: grid;
-      grid-template-columns: 1;
-      grid-template-rows: repeat(3, 33.33%);
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(3, 33.33%);
     }
-  
+
     /* contenido del section */
     .cancion-tres,
     .cancion-cinco,
     .cancion-seis {
-      display: none;
+        display: none;
     }
-  
+
     /* orden del section */
     .cancion-cuatro {
-      grid-row-start: 1;
+        grid-row-start: 1;
     }
-  
-  }
-  
-  
-  
-  @media screen and (min-width:600px) and (max-width:1024px) {
-  
-  
-  
+
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+
+
+
     /* contenedor div  */
     .container-biografia {
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      justify-items: center;
-      align-items: center;
-      gap: 1rem;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: center;
+        gap: 1rem;
     }
-  
+
     /* contenedor article */
     .texto-biografia {
-      grid-row: 2;
-      margin-left: 2rem;
-      margin-right: 1rem;
-  
+        grid-row: 2;
+        margin-left: 2rem;
+        margin-right: 1rem;
+
     }
-  
+
     /* contenedor section */
     .canciones {
-      margin: 1rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 100%);
-      grid-gap: 1rem;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 100%);
+        grid-gap: 1rem;
     }
-  }
-  
-  
-  /* contenido para pantalla de escritorio/desktop */
-  @media screen and (min-width:1024px) {
-  
+}
+
+
+/* contenido para pantalla de escritorio/desktop */
+@media screen and (min-width:1024px) {
+
     /* contenedor div  */
     .container-biografia {
-      margin-top: 2rem;
-      display: grid;
-  
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 1rem;
+        margin-top: 2rem;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
-  
+
     /* contenedor article */
     .texto-biografia {
-      margin-left: 2rem;
-      grid-column: 1;
-  
+        margin-left: 2rem;
+        grid-column: 1;
+
     }
-  
+
     /* contenedor aside */
     .img-biografia {
-      grid-column: 2;
+        grid-column: 2;
     }
-  
+
     /* contenedor section */
     .canciones {
-      margin: 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 100%);
-      grid-gap: 1rem;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100%);
+        grid-gap: 1rem;
     }
-  }
-  
-  /* N°1 hasta aqui page INICIO / index.html*/
+}
+
+/* N°1 hasta aqui page INICIO / index.html*/
 
 
-  /* N°2 editando page RECITALES / recitales.html */
+/* N°2 editando page RECITALES / recitales.html */
 
 /* edicion de la lista general para los 3 tipos de pantalla */
 
-   /* editando lista */
-   .cuadro-enlistado ul {
+/* editando lista */
+.cuadro-enlistado ul {
     list-style-type: none;
     padding: 0;
-  }
+}
 
-  .cuadro-enlistado li {
+.cuadro-enlistado li {
     height: 5rem;
     border-bottom: 2px solid #01030b;
-  }
+}
 
-  .cuadro-enlistado a {
+.cuadro-enlistado a {
     display: block;
     color: #58626C;
     text-decoration: none;
     text-align: center;
-  }
+}
 
-  .cuadro-enlistado a:hover {
+.cuadro-enlistado a:hover {
     color: rgb(0, 0, 0);
 
-  }
-  /* hasta aca edicion de lista */
+}
+
+/* hasta aca edicion de lista */
 
 /* editando titulo general para page recitales para los 3 tipos de pantalla */
 
-  /* editando el titulo */
-  .titulo-recitales {
+/* editando el titulo */
+.titulo-recitales {
     margin-top: 5rem;
     margin-bottom: 1rem;
     text-align: center;
-  }
+}
 
-  /* editando estilos de la lista para los 3 tipos de pantalla  */
-  /* editando aside / lista */
-  .cuadro-enlistado{
+/* editando estilos de la lista para los 3 tipos de pantalla  */
+/* editando aside / lista */
+.cuadro-enlistado {
     background-color: #dac8be;
     border: 1px solid #000000;
     height: 40rem;
-  }
 
+}
+
+/* editando los link de la lista */
+.cuadro-enlistado ul li a {
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 
 /* contenido para pantalla de celular */
 @media screen and (max-width:600px) {
-  
-    /* contenedor del div */
-    .contenedor-recitales {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  
+
     /* contenedor del aside / lista */
     .cuadro-enlistado {
-      grid-row: 2;   
-      margin: 1rem;     
-    } 
-  
-    /* contenido del article */
-    .imagen-escritorio,
-    .imagen-tablet {
-      display: none;
+        margin: 1rem;
     }
-  }
-  
 
-  /* contenido para pantalla de tablet */
-  @media screen and (min-width:600px) and (max-width:1024px) { 
-  
-    /* contenedor del div */
-    .contenedor-recitales {
-      display: grid;
-      grid-template-columns: 1fr;
+    /* contenido del article */
+    .imagen-escritorio {
+        display: none;
     }
-  
+}
+
+
+/* contenido para pantalla de tablet */
+@media screen and (min-width:600px) and (max-width:1024px) {
+
+
     /* contenedor del aside */
     .cuadro-enlistado {
-      grid-row: 2;   
-      margin: 1rem 4rem 1rem 4rem;
+
+        margin: 1rem 20% 1rem 20%;
     }
-  
-    /* contenido del article */  
+
+    /* contenido del article */
     .imagen-escritorio {
-      display: none;
+        display: none;
     }
-  }
-  
-  
-  /* contenido para pantalla de escritorio/desktop */
-  @media screen and (min-width:1024px) {
-  
-  
+}
+
+
+/* contenido para pantalla de escritorio/desktop */
+@media screen and (min-width:1024px) {
+
+
     /* contenedor div  */
     .contenedor-recitales {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "imagen cuadro";
-      grid-gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "imagen cuadro";
+        grid-gap: 1rem;
     }
-  
+
     /* contenedor aside / lista */
-  
+
     .cuadro-enlistado {
-      grid-area: cuadro;
-      margin: 1rem;
-      width: auto;
+        grid-area: cuadro;
+        margin: 1rem;
+        width: auto;
     }
-  
+
     /* contenedor article */
     .imagen-escritorio img {
-      grid-area: imagen;
-      align-self: flex-end;
-      margin: 1rem;
-      width: 100%;
-      height: 40rem;
-    } 
-  
-  }
-  
-  /* N°2 Hasta aqui page RECITALES / recitales.html */
+        grid-area: imagen;
+        align-self: flex-end;
+        margin: 1rem;
+        width: 100%;
+        height: 40rem;
+    }
+
+}
+
+/* N°2 Hasta aqui page RECITALES / recitales.html */
