@@ -404,7 +404,7 @@ footer {
     padding: 10px 20px;
     background-color: #ECC1A1;
     color: #080101;
-    border: 1px 1px black;
+    border: 1px 1px rgb(8, 8, 8);
     cursor: pointer;
 }
 
