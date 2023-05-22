@@ -139,6 +139,7 @@ footer {
 
     /* editando contenido aside */
     .img-biografia img {
+        max-width: 100%;
        object-fit: cover;
     }
 
@@ -335,11 +336,11 @@ footer {
     .contenedor-recitales {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "imagen cuadro";
+        grid-template-areas:    
+            "imagen cuadro"  ;
         grid-gap: 1rem;
     }
-
+ 
     /* contenedor aside / lista */
 
     .cuadro-enlistado {
