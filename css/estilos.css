@@ -217,7 +217,7 @@ footer {
     }
     .footer-index{
         height: auto;
-       
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;}
@@ -256,10 +256,11 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 100%);
         grid-gap: 1rem;
+        margin-bottom: 3rem;
     }
     .footer-index{
         height: auto;
-       
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;}
