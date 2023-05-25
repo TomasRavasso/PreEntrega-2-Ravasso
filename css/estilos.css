@@ -17,6 +17,7 @@ body {
     font-family: Verdana;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
    
 }
 
@@ -34,6 +35,10 @@ main {
 
 /* Estilo general del footer */
 footer {
+   
+        grid-row-start: 3; /* Coloca el footer en la tercera fila */
+        grid-row-end: 4; /* Asegura que el footer ocupe solo una fila */
+    
    position: relative;
     margin-top: 6rem;
     left: 0;
@@ -172,9 +177,12 @@ footer {
     .cancion-cuatro {
         grid-row-start: 1;
     }
+    .main-index{
+        position: relative;
+    }
     .footer-index{
     height: auto;
-    position: relative;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;}
@@ -216,9 +224,12 @@ footer {
         grid-gap: 1rem;
         margin-bottom: 3rem;
     }
+    .main-index{
+        position: relative;
+    }
     .footer-index{
         height: auto;
-        position: relative;
+        position: static;
         bottom: 0;
         left: 0;
         width: 100%;}
@@ -259,9 +270,12 @@ footer {
         grid-gap: 1rem;
         margin-bottom: 3rem;
     }
+    .main-index{
+        position: relative;
+    }
     .footer-index{
         height: auto;
-        position: relative;
+        position: static;
         bottom: 0;
         left: 0;
         width: 100%;}
