@@ -1,3 +1,4 @@
+
 /* reset */
 
 * {
@@ -27,6 +28,8 @@ header {
 
 /* estilo general del main */
 main {
+    display: grid;
+    grid-template-rows: 1fr auto;
     grid-row: 2;
 }
 
@@ -241,7 +244,6 @@ footer {
 }
 
 /* N°1 hasta aqui page INICIO / index.html*/
-
 
 
 
