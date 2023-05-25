@@ -40,7 +40,7 @@ footer {
         grid-row-end: 4; /* Asegura que el footer ocupe solo una fila */
     
    position: relative;
-    margin-top: 6rem;
+    margin-top: 1rem;
     left: 0;
    
     background-color: #ECC1A1;
@@ -259,19 +259,12 @@ footer {
         margin: 1rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 100%);
+        grid-template-rows: repeat(2, 10rem);
         grid-gap: 1rem;
         margin-bottom: 3rem;
     }
-    .main-index{
-        position: relative;
-    }
-    .footer-index{
-        height: auto;
-        position: static;
-        bottom: 0;
-        left: 0;
-        width: 100%;}
+  
+
     }
 
 
