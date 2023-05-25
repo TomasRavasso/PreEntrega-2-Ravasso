@@ -32,7 +32,9 @@ main {
 
 /* Estilo general del footer */
 footer {
-    position: fixed;
+    margin-top: 2rem;
+    left: 0;
+    
     grid-row: 3;
     background-color: #ECC1A1;
     bottom: 0;
