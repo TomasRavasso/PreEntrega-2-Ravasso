@@ -35,10 +35,9 @@ main {
 
 /* Estilo general del footer */
 footer {
-    margin-top: 2rem;
+    margin-top: 6rem;
     left: 0;
-    
-    grid-row: 3;
+
     background-color: #ECC1A1;
     bottom: 0;
     width: 100%;
