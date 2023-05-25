@@ -17,7 +17,7 @@ body {
     font-family: Verdana;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+   
 }
 
 /* estilo general del header */
@@ -45,7 +45,7 @@ footer {
     border-top-right-radius: 5%;
     border-top: 1px solid #000000;
     text-align: center;
-    color: #e90606;
+    color: #000000;
 
 }
 
