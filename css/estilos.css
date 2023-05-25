@@ -28,8 +28,7 @@ header {
 
 /* estilo general del main */
 main {
-    display: grid;
-    grid-template-rows: 1fr auto;
+   
     grid-row: 2;
 }
 
@@ -37,7 +36,7 @@ main {
 footer {
     margin-top: 6rem;
     left: 0;
-
+    grid-row: 3;
     background-color: #ECC1A1;
     bottom: 0;
     width: 100%;
@@ -118,6 +117,8 @@ footer {
     margin: 1rem;
 }
 
+
+
 /* contenido para pantalla de celular */
 @media screen and (max-width:600px) {
 
@@ -175,15 +176,14 @@ footer {
 
 
 @media screen and (min-width:600px) and (max-width:1024px) {
-
-
+   
 
     /* contenedor div  */
     .container-biografia {
         margin-top: 2rem;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        
         justify-items: center;
         align-items: center;
         gap: 1rem;
@@ -196,6 +196,9 @@ footer {
         margin-right: 1rem;
 
     }
+    .img-biografia{
+        grid-row: 1;
+    }
 
     /* contenedor section */
     .canciones {
@@ -204,6 +207,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 100%);
         grid-gap: 1rem;
+    }
+    .footer-index{
+        bottom: 0;
+        grid-row:7;
     }
 }
 
@@ -239,6 +246,10 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 100%);
         grid-gap: 1rem;
+    }
+    .footer-index{
+        bottom: 0;
+        grid-row:7;
     }
 }
 
