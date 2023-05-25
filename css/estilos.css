@@ -16,8 +16,8 @@ body {
     color: #F5F1EE;
     font-family: Verdana;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    grid-template-rows: auto auto auto;
+   
    
 }
 
@@ -177,12 +177,10 @@ footer {
     .cancion-cuatro {
         grid-row-start: 1;
     }
-    .main-index{
-        position: relative;
-    }
+  
     .footer-index{
     height: auto;
-    position: static;
+    
     bottom: 0;
     left: 0;
     width: 100%;}
@@ -224,17 +222,7 @@ footer {
         grid-gap: 1rem;
         margin-bottom: 3rem;
     }
-    .main-index{
-        position: relative;
-    }
-    .footer-index{
-        height: auto;
-        position: static;
-        bottom: 0;
-        left: 0;
-        width: 100%;}
-    }
-
+}
 
 
 /* contenido para pantalla de escritorio/desktop */
