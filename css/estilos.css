@@ -157,6 +157,7 @@ footer {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: repeat(3, 33.33%);
+        margin-bottom: 4rem;
     }
 
     /* contenido del section */
@@ -170,7 +171,12 @@ footer {
     .cancion-cuatro {
         grid-row-start: 1;
     }
-
+    .footer-index{
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
 }
 
 
@@ -207,13 +213,16 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 100%);
         grid-gap: 1rem;
+        margin-bottom: 3rem;
     }
     .footer-index{
-        margin-top: 20rem;
+        height: auto;
+       
         bottom: 0;
-        grid-row:7;
+        left: 0;
+        width: 100%;}
     }
-}
+
 
 
 /* contenido para pantalla de escritorio/desktop */
@@ -249,11 +258,13 @@ footer {
         grid-gap: 1rem;
     }
     .footer-index{
-        margin-top: 20rem;
+        height: auto;
+       
         bottom: 0;
-        grid-row:7;
+        left: 0;
+        width: 100%;}
     }
-}
+
 
 /* N°1 hasta aqui page INICIO / index.html*/
 
