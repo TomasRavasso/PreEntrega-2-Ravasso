@@ -218,9 +218,14 @@ footer {
         margin: 1rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 100%);
+        grid-template-rows: repeat(2, 10rem);
         grid-gap: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+        
+    }
+
+    .cancion-uno , .cancion-dos{
+        display: none;
     }
 }
 
