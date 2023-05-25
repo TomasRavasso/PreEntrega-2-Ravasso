@@ -32,6 +32,7 @@ main {
 
 /* Estilo general del footer */
 footer {
+    position: fixed;
     grid-row: 3;
     background-color: #ECC1A1;
     bottom: 0;
@@ -140,7 +141,7 @@ footer {
     /* editando contenido aside */
     .img-biografia img {
         max-width: 100%;
-       object-fit: cover;
+        object-fit: cover;
     }
 
     /* section para pantalla de celular INICIO */
@@ -336,11 +337,11 @@ footer {
     .contenedor-recitales {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:    
-            "imagen cuadro"  ;
+        grid-template-areas:
+            "imagen cuadro";
         grid-gap: 1rem;
     }
- 
+
     /* contenedor aside / lista */
 
     .cuadro-enlistado {
