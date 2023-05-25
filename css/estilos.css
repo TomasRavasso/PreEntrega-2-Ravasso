@@ -34,9 +34,10 @@ main {
 
 /* Estilo general del footer */
 footer {
+   position: relative;
     margin-top: 6rem;
     left: 0;
-    grid-row: 3;
+   
     background-color: #ECC1A1;
     bottom: 0;
     width: 100%;
@@ -173,7 +174,7 @@ footer {
     }
     .footer-index{
     height: auto;
-    position: static;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;}
@@ -217,7 +218,7 @@ footer {
     }
     .footer-index{
         height: auto;
-        position: static;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;}
@@ -260,7 +261,7 @@ footer {
     }
     .footer-index{
         height: auto;
-        position: static;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;}
