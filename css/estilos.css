@@ -396,8 +396,9 @@ footer {
 
 
 /* body contacto para que ocupe 100vh el main */
-.body-contacto main{
-    min-height: 100vh;
+.body-contacto footer{
+    position: fixed;
+    bottom: 0;
 }
 
 /* edicion del titulo h1 contacto */
