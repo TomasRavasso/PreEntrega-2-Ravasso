@@ -178,12 +178,7 @@ footer {
         grid-row-start: 1;
     }
   
-    .footer-index{
-    height: auto;
     
-    bottom: 0;
-    left: 0;
-    width: 100%;}
 }
 
 
@@ -398,6 +393,12 @@ footer {
 
 
 /* contenido general para los 3 tipos de pantalla */
+
+
+/* body contacto para que ocupe 100vh el main */
+.body-contacto main{
+    min-height: 100vh;
+}
 
 /* edicion del titulo h1 contacto */
 .titulo-contacto {
