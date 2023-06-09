@@ -164,7 +164,7 @@ footer {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: repeat(3, 33.33%);
-        margin-bottom: 4rem;
+        grid-gap:1rem;
     }
 
     /* contenido del section */
@@ -217,7 +217,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 10rem);
         grid-gap: 1rem;
-        margin-bottom: 1rem;
+        
 
     }
 
@@ -259,7 +259,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 10rem);
         grid-gap: 1rem;
-        margin-bottom: 3rem;
+       
     }
 
 
